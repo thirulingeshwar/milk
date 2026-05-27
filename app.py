@@ -15,11 +15,9 @@ CORS(app)
 # =====================================================
 # MONGODB ATLAS CONNECTION
 # =====================================================
-MONGO_USERNAME = "milk"
-MONGO_PASSWORD = "milk"  # <--- CHANGE THIS TO YOUR ACTUAL PASSWORD
-MONGO_CLUSTER = "cluster0.yjjzkrq.mongodb.net"
 
-MONGO_URI = f"mongodb+srv://{MONGO_USERNAME}:{MONGO_PASSWORD}@{MONGO_CLUSTER}/?appName=Cluster0"
+
+MONGO_URI = f"mongodb+srv://milk:milk@cluster0.yjjzkrq.mongodb.net/?appName=Cluster0"
 
 DB_NAME = 'heritage_daily_db'
 COLLECTION_NAME = 'products'
