@@ -457,15 +457,5 @@ def health_check():
         return jsonify({'status': 'degraded'}), 500
 
 if __name__ == '__main__':
-    print("\n" + "="*60)
-    print("🏺 HERITAGE DAILY INPUT APP - WITH PDF EXPORTS")
-    print("="*60)
-    connected = connect_to_mongodb()
-    if not connected:
-        print("❌ Please fix MongoDB connection and restart")
-        exit(1)
-    print(f"📍 Access the app at: http://localhost:5000")
-    print(f"💰 Currency: Indian Rupee (₹)")
-    print(f"📄 PDF Reports: Available Products & Sold Products")
-    print("="*60 + "\n")
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    
+    app.run(debug=True, port=5000)
