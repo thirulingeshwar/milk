@@ -1,6 +1,6 @@
 flask
 flask_cors
-pymongo
+pymongo==4.13.2
 gunicorn
 reportlab
 
