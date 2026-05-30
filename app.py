@@ -59,6 +59,8 @@ def connect_to_mongodb():
         print("="*60 + "\n")
         return False
 
+connect_to_mongodb()
+
 def serialize_product(product):
     if product is None:
         return None
@@ -457,5 +459,5 @@ def health_check():
         return jsonify({'status': 'degraded'}), 500
 
 if __name__ == '__main__':
-    connect_to_mongodb()
+   
     app.run(debug=True, port=5000)
